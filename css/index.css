@@ -1,0 +1,16 @@
+:root {
+    --gradient-verao: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    --azul-claro: #C8DEEF;
+    --coral: #FBF0DD;
+    --amarelo: #FACF9D;
+    --mostarda: #DF9010;
+    --azul-escuro: #2E7BA2;
+
+    --titulos: 'Calistoga', cursive;
+    --textos: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
