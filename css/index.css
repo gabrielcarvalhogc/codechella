@@ -5,6 +5,8 @@
     --amarelo: #FACF9D;
     --mostarda: #DF9010;
     --azul-escuro: #2E7BA2;
+    --cinza: #444444;
+    --branco: #FFFFFF;
 
     --titulos: 'Calistoga', cursive;
     --textos: 'Raleway', sans-serif;
@@ -13,4 +15,12 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+main {
+    background-image: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+}
+
+.introduction__banner {
+    width: 100vw;
 }

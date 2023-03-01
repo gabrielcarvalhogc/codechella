@@ -1,6 +1,38 @@
 .introduction {
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../img/Banner-boas-vindas.png');
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    margin: 4em 0;
+}
+
+.introduction__festa {
+    width: 35vw;
+}
+
+.introduction__container {
+    align-items: center;
+    width: 30vw;
+}
+
+.introduction__tittle {
+    color: var(--cinza);
+    font: 700 2em var(--textos);
+    text-align: center;
+}
+
+.introduction__description {
+    color: var(--cinza);
+    font: 500 1.2em var(--textos);
+    margin: 1.2em 0;
+    text-align: center;
+}
+
+.introduction__button {
+    background-color: var(--azul-escuro);
+    border-radius: .5em;
+    box-shadow: 4px 4px 0px #444444;
+    color: var(--branco);
+    font: 700 1.2em var(--textos);
+    margin: 0 5em;
+    padding: .6em 1em;
+    text-decoration: none; 
 }
