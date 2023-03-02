@@ -15,6 +15,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 main {
@@ -22,5 +23,5 @@ main {
 }
 
 .introduction__banner {
-    width: 100vw;
+    width: 100%;
 }
