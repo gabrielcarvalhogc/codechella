@@ -53,9 +53,11 @@
     font-size: 1.3em;
     font-weight: 400;
     margin: 0 .3em;
+    margin-bottom: 3em;
 }
 
 .line-up__img {
     background-image: url('../img/Imagem-footer.png');
-    width: 98vw;
+    width: 98.9vw;
+    height: 338px;
 }

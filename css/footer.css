@@ -1,0 +1,26 @@
+.footer {
+    height: 232px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__redes {
+    margin-left: 10%;
+}
+
+.footer__redes__social {
+    font: 500 1em var(--textos);
+    color: var(--cinza);
+    margin-top: 1em;
+}
+
+.footer__dev {
+    margin-right: 10%;
+}
+
+.footer__devs {
+    font: 500 1em var(--textos);
+    color: var(--cinza);
+    margin: 1em 0;
+}
