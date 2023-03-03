@@ -1,43 +1,41 @@
 .introduction {
-    display: flex;
-    justify-content: space-around;
-    margin: 4em 0;
-
+    display: grid;
+    grid-template-areas: "img" "container";
+    grid-template-columns: 35vw 30vw;
+    margin: 3em 12vw;
+    column-gap: 6vw;
 }
 
 .introduction__festa {
+    grid-area: 1 / 1 / 2 / 2;
     width: 35vw;
 }
 
 .introduction__container {
-    align-items: center;
-    width: 30vw;
+    grid-area: container;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .introduction__tittle {
-    color: var(--cinza);
-    font: 700 2em var(--textos);
     text-align: center;
+    font: 700 1.5em var(--textos);
+    color: var(--cinza);
 }
 
 .introduction__description {
-    color: var(--cinza);
-    font: 500 1.2em var(--textos);
-    margin: 1.2em 0;
     text-align: center;
+    margin: 1em 0;
+    font: 500 1em var(--textos);
+    color: var(--cinza);
 }
 
 .introduction__button {
-    background-color: var(--azul-escuro);
-    border-radius: .5em;
-    box-shadow: 4px 4px 0px #444444;
+    text-decoration: none;
+    border-radius: 8px;
+    font: 700 1em var(--textos);
     color: var(--branco);
-    font: 700 1.2em var(--textos);
-    margin: 0 5em;
-    padding: .6em 1em;
-    text-decoration: none; 
-    background-image: url('../img/local_activity.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    
+    padding: 8px 16px;
+    background-color: var(--azul-escuro);
+    box-shadow: 4px 4px 0px #444444;
+    margin-left: 4em;
 }
