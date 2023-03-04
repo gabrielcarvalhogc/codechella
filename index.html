@@ -28,8 +28,14 @@
     </header>
 
     <main class="main">
+
+        <picture class="introduction__picture">
+            <source media="(max-width: 360px)" srcset="img/Banner768px.png">
+            <source media="(min-width: 361px) and (max-width: 768px)" srcset="img/Banner768px.png">
+            <source media="(min-width: 769px)" srcset="img/Banner-boas-vindas.png">
+            <img src="img/Banner-boas-vindas.png" alt="Descrição da imagem">
+        </picture>
         
-        <img class="introduction__banner" src="img/Banner-boas-vindas.png" alt="">
         <section class="introduction">
             
             <img class="introduction__festa" src="img/festa.png" alt="Pessoas olhando para o palco de um show">
