@@ -20,3 +20,20 @@
     color: white;
     font: 700 20px var(--textos);
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: block;
+        padding: 2em .5em;
+        max-width: 768px;
+    }
+    .header__logo {
+        display: block;
+        margin: 0 auto 1em auto;
+        width: 30%;
+    }
+
+    .header__container__link {
+        margin: 0 .6em;
+    }
+}

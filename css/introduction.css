@@ -1,3 +1,6 @@
+.introduction__picture img{
+    width: 98.9vw;
+}
 .introduction {
     column-gap: 6vw;
     display: grid;
@@ -41,4 +44,35 @@
     margin-left: 33%;
     padding: 8px 8px;
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .introduction__picture img {
+        width: 98.9vw;
+    }
+
+    .introduction {
+        display: block;
+        margin: 0;
+    }
+
+    .introduction__festa {
+        margin: 2em 10vw 1em 10vw;
+        width: 80%;
+    }
+
+    .introduction__container {
+        margin: 0 10vw;
+    }
+
+    .introduction__tittle {
+        margin: 0;
+    }
+
+    .introduction__button {
+        display: block;
+        margin: 2em auto;
+        text-align: center;
+        width: 30%;
+    }
 }
