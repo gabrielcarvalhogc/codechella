@@ -66,4 +66,15 @@
     .line-up__tittle {
         margin: .5em 0 1em 0;
     }
+
+    .line-up__line2 , .line-up__line3, .line-up__line4 {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: .5em;
+    }
+
+    .line-up__saturday-line4 {
+        margin: 0;
+    }
 }
