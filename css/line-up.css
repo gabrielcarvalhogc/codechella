@@ -68,10 +68,7 @@
     }
 
     .line-up__line2 , .line-up__line3, .line-up__line4 {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-        gap: .5em;
+        display: block;
     }
 
     .line-up__saturday-line4 {
