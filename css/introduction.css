@@ -76,3 +76,13 @@
         width: 30%;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .introduction__picture img {
+        width: 100vw;
+    }
+
+    .introduction__button {
+        width: 80vw;
+    }
+}

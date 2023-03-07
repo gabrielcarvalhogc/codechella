@@ -75,3 +75,11 @@
         margin: 0;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .line-up__img {
+        background-image: url('../img/Imagem-footer-mobile.png');
+        width: 100vw;
+        height: 338px;
+    }
+}

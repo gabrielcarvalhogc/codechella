@@ -47,3 +47,11 @@
         margin: 1em .5em;
     }
 }
+
+@media screen and (max-width: 425px) {
+
+    .footer__dev {
+        display: block;
+        margin: 2em 0;
+    }
+}
