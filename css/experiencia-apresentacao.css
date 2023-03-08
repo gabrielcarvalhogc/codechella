@@ -1,0 +1,48 @@
+.experiencia__apresentacao {
+    display: grid;
+    padding: 3em 0 8em 0;
+    grid-template-rows: auto auto;
+    grid-template-columns: 45vw 45vw;
+    justify-content: center;
+    gap: 5%;
+}
+
+.experiencia__imagens {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.experiencia__imagem-acessibilidade {
+    background-image: url('../img/acessibilidade-e-inclusao.png');
+}
+
+.experiencia__titulo {
+    font: 700 2em var(--textos);
+    color: var(--cinza);
+    margin: 1em 0 .5em 0;
+}
+
+.experiencia__descricao {
+    font: 500 1.2em var(--textos);
+    color: var(--cinza);
+    text-align: left;
+    line-height: 2em;
+}
+
+.experiencia__texto {
+    height: 381px;
+}
+
+.posicionamento-direita {
+    text-align: end;
+    line-height: 2.5em;
+}
+
+.experiencia__imagem-sustentabilidade {
+    background-image: url('../img/sustentabilidade.png');
+}
+
+.experiencia__imagem-atracoes {
+    background-image: url('../img/atracoes.png');
+}

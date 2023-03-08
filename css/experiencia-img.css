@@ -1,0 +1,23 @@
+.experiencia__container {
+    background-image: url('../img/a-experiencia-desktop.png');
+    background-repeat: no-repeat;
+    height: 407px;
+    max-width: 100vw;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px){
+    .experiencia__container {
+        background-image: url('../img/a-experiencia-tablet.png');
+        height: 384px;
+    }
+}
+
+@media screen and (max-width: 425px) { 
+    .experiencia__container {
+        background-image: url('../img/a-experiencia-mobile.png');
+        height: 360px;
+    }
+}
