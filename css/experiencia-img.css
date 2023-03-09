@@ -1,11 +1,11 @@
 .experiencia__container {
     background-image: url('../img/a-experiencia-desktop.png');
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover; 
     height: 407px;
     max-width: 100vw;
     width: auto;
-    background-position: center;
-    background-size: cover;
 }
 
 @media screen and (max-width: 768px) and (min-width: 426px){
