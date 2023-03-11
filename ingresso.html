@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/ingresso/ingresso-header.css">
+    <link rel="stylesheet" href="css/ingresso/ingresso-banner.css">
+    <link rel="stylesheet" href="css/ingresso/ingresso-form.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -22,22 +24,52 @@
         </div>
     </header>
 
-    <footer class="footer">
-        <div class="footer__redes">
-            <img class="footer__redes-img" src="img/Logo1 2.png" alt="logo do Codechella">
-            <p class="footer__redes__social">
-                Acesse nossas redes:
-                <img src="img/icone-instagran.png" alt="">
-                <img src="img/icone-twich.png" alt="">
-                <img src="img/icone-twitter.png" alt="">
-                <img src="img/icone-whatsapp.png" alt="">
-            </p>
-        </div>
+    <div class="ingresso__banner"></div>
 
-        <div class="footer__dev">
-            <p class="footer__devs">Desenvolvido por Gabriel Carvalho e Alura</p>
-            <p class="footer__devs">Projeto fictício sem fins comerciais</p>
-        </div>
+    <main>
+        <form class="form" action="">
+
+            <h2 class="form__titulo">Preencha o formulário a seguir:</h2>
+
+            <label for="nome" class="form__bloco">
+                <span class="form__descricao">Nome completo:</span>
+                <input type="text" class="form__campo" id="nome">
+            </label>
+
+            <label for="email" class="form__bloco">
+                <span class="form__descricao">Email:</span>
+                <input type="email" class="form__campo" id="email">
+            </label>
+
+            <label for="" class="form__bloco">
+                <span class="form__descricao">Tipo de programa</span>
+                <input type="text" class="form__campo">
+            </label>
+
+            <label for="" class="form__bloco">
+                <span class="form__descricao">Data de nascimento:</span>
+                <input type="date" class="form__campo">
+            </label>
+
+            <button type="submit" class="form__botao">Avançar <img src="img/ingresso/local_activity.png" alt=""></button>
+        </form>
+    </main>
+        <footer class="footer">
+            <div class="footer__redes">
+                <img class="footer__redes-img" src="img/Logo1 2.png" alt="logo do Codechella">
+                <p class="footer__redes__social">
+                    Acesse nossas redes:
+                    <img src="img/icone-instagran.png" alt="">
+                    <img src="img/icone-twich.png" alt="">
+                    <img src="img/icone-twitter.png" alt="">
+                    <img src="img/icone-whatsapp.png" alt="">
+                </p>
+            </div>
+
+            <div class="footer__dev">
+                <p class="footer__devs">Desenvolvido por Gabriel Carvalho e Alura</p>
+                <p class="footer__devs">Projeto fictício sem fins comerciais</p>
+            </div>
     </footer>
 </body>
 </html>
