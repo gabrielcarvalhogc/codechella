@@ -56,12 +56,6 @@
     margin-bottom: 3em;
 }
 
-.line-up__img {
-    background-image: url('../img/Imagem-footer.png');
-    width: 98.9vw;
-    height: 338px;
-}
-
 @media screen and (max-width: 768px) {
     .line-up__tittle {
         margin: .5em 0 1em 0;
@@ -77,9 +71,5 @@
 }
 
 @media screen and (max-width: 425px) {
-    .line-up__img {
-        background-image: url('../img/Imagem-footer-mobile.png');
-        width: 100vw;
-        height: 338px;
-    }
+
 }

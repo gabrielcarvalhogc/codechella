@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/introduction.css">
-    <link rel="stylesheet" href="css/line-up.css">
+    <link rel="stylesheet" href="css/pagina-inicial/header.css">
+    <link rel="stylesheet" href="css/pagina-inicial/banner-boas-vindas.css">
+    <link rel="stylesheet" href="css/pagina-inicial/introduction.css">
+    <link rel="stylesheet" href="css/pagina-inicial/line-up.css">
+    <link rel="stylesheet" href="css/pagina-inicial/banner-festa.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -29,16 +31,11 @@
 
     <main class="main">
 
-        <picture class="introduction__picture">
-            <source media="(max-width: 425px)" srcset="img/Banner-mobile.png">
-            <source media="(min-width: 361px) and (max-width: 768px)" srcset="img/Banner768px.png">
-            <source media="(min-width: 769px)" srcset="img/Banner-boas-vindas.png">
-            <img src="img/Banner-boas-vindas.png" alt="Descrição da imagem">
-        </picture>
+        <div class="introduction__banner"></div>
         
         <section class="introduction">
             
-            <img class="introduction__festa" src="img/festa.png" alt="Pessoas olhando para o palco de um show">
+            <img class="introduction__festa" src="img/pagina-inicial/festa.png" alt="Pessoas olhando para o palco de um show">
 
             <div class="introduction__container">
                 <h2 class="introduction__tittle"> &lt; 11 e 12 de Março &gt; <br> Aluródromo de São Paulo</h2>
@@ -105,11 +102,12 @@
                 <p class="line-up__saturday line-up__saturday-line4">Jenkins Brothers</p>
                 <p class="line-up__saturday line-up__saturday-line4">Rubycat Dolls</p>
             </div>
-
-            <div class="line-up__img"></div>
-
+        
         </section>
     </main>
+
+    <div class="line-up__img"></div>
+
     <footer class="footer">
         <div class="footer__redes">
             <img class="footer__redes-img" src="img/Logo1 2.png" alt="logo do Codechella">

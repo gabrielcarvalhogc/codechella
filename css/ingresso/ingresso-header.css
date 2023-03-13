@@ -25,7 +25,7 @@
     font: 700 20px var(--textos);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) and (min-width: 650px) {
     .header {
         display: block;
         padding: 2em .5em;
@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 649px) {
 
     .header {
         align-items: center;

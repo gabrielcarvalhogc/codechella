@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-@media screen and (max-width:1023px) and (min-width:426px) {
+@media screen and (max-width:1200px) and (min-width:650px) {
     .setores {
         flex-direction: column;
     }
@@ -49,14 +49,21 @@
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:649px) {   
     .setores {
         flex-direction: column;
         justify-content: center;
-        margin: 0 7%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .setores__containers:nth-child(2) {
+        padding:0;
     }
 
     .setores__img {
+        display: block;
+        margin: 0 auto;
         height: 239px;
         width: 312px;
     }
