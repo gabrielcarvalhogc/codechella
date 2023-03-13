@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/ingresso/ingresso-header.css">
-    <link rel="stylesheet" href="css/ingresso/ingresso-banner.css">
-    <link rel="stylesheet" href="css/ingresso/ingresso-form.css">
+    <link rel="stylesheet" href="css/ingresso/ingresso-confirmacao-banner.css">
+    <link rel="stylesheet" href="css/ingresso/qr-code.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -24,36 +24,42 @@
         </div>
     </header>
 
-    <div class="ingresso__banner"></div>
+    <div class="ingresso-confirmacao__banner"></div>
 
     <main>
-        <form class="form" action="">
+        <section class="confirmacao">
+            <h2 class="confirmacao__titulo">Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</h2>
 
-            <h2 class="form__titulo">Preencha o formulário a seguir:</h2>
+            <div class="confirmacao__container">
 
-            <label for="nome" class="form__bloco">
-                <span class="form__descricao">Nome completo:</span>
-                <input type="text" class="form__campo" id="nome">
-            </label>
+                <div class="confirmacao__imagens">
+                    <img src="img/ingresso/Logo.png" alt="logo do Codechella">
+    
+                    <img src="img/ingresso/Ellipse.png" alt="">
+                </div>
 
-            <label for="email" class="form__bloco">
-                <span class="form__descricao">Email:</span>
-                <input type="email" class="form__campo" id="email">
-            </label>
+                <div class="confirmacao__bloco">
+                    <picture>
+                        <source media="(max-width: 425px)" srcset="img/ingresso/Qr-code-mobile.svg" sizes="">
+                        <source media="(max-width: 1023px)" srcset="img/ingresso/Qr-code-tablet.svg" sizes="">
+                        <source media="(min-width: 1024px)" srcset="img/ingresso/Qr-code-desktop.svg" sizes="">
+                        <img class="confirmacao__qr-code" src="img/ingresso/Qr-code-desktop.svg" alt="">
+                    </picture>
 
-            <label for="" class="form__bloco">
-                <span class="form__descricao">Tipo de programa</span>
-                <input type="text" class="form__campo">
-            </label>
+                    <div class="confirmacao__informacoes">
 
-            <label for="" class="form__bloco">
-                <span class="form__descricao">Data de nascimento:</span>
-                <input type="date" class="form__campo">
-            </label>
+                        <h3 class="confirmacao__nome">Moni Hillman</h3>
 
-            <button type="submit" class="form__botao">Avançar <img src="img/ingresso/local_activity.png" alt=""></button>
-        </form>
+                        <p class="confirmacao__dados">Ingresso Cortesia</p>
+                        <p class="confirmacao__dados">Setor Pista</p>
+                        <p class="confirmacao__dados">Data: 11/03</p>
+                        <p class="confirmacao__dados">Local: São Paulo-SP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
         <div class="footer__redes">
             <img class="footer__redes-img" src="img/Logo1 2.png" alt="logo do Codechella">

@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 50%;
     padding-bottom: 32px;
+    width: 50%;
 }
 
 .form__titulo {
@@ -14,8 +14,8 @@
 }
 
 .form__bloco {
-    display: flex;
     flex-direction: column;
+    display: flex;
 }
 
 .form__descricao {
