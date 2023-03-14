@@ -37,6 +37,19 @@
     color: var(--cinza);
 }
 
+.informacoes .informacoes__bloco .informacoes__content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.informacoes .informacoes__bloco.active .informacoes__content {
+    height: auto;
+    padding: 10px;
+}
+
 @media screen  and (max-width:1023px) and (min-width:649px) {
     .informacoes {
         width: 80%;
