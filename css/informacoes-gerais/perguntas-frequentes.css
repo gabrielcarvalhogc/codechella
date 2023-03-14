@@ -11,6 +11,11 @@
     text-align: center;
 }
 
+.informacoes__bloco {
+    margin-bottom: .5em;
+    cursor: pointer;
+}
+
 .informacoes__bloco-container {
     align-items: center;
     background-color: var(--azul-escuro);
@@ -24,13 +29,11 @@
     font: 700 1.2em var(--textos);
 }
 
-.informacoes__resposta {
+.informacoes__content {
     background-color: var(--azul-claro);
     color: var(--cinza);
     font: 500 1.2em var(--textos);
     line-height: 2em;
-    margin-bottom: 1em;
-    padding: 1em;
 }
 
 .informacoes__resposta  a {
