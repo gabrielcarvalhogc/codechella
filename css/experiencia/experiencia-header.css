@@ -20,6 +20,10 @@
     text-decoration: none;
 }
 
+.header__container__link:hover {
+    opacity: 70%;
+}
+
 .header__container__link p {
     color: white;
     font: 700 20px var(--textos);
