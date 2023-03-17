@@ -31,6 +31,10 @@
     padding: .8em;
 }
 
+.form__campo::placeholder {
+    color: rgba(255, 0, 0, 0.514);
+}
+
 .form__botao {
     align-items: center;
     background-color: var(--azul-escuro);
