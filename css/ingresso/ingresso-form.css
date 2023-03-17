@@ -29,6 +29,7 @@
     font: 400 1em var(--textos);
     outline: none;
     padding: .8em;
+    margin-bottom: 1em;
 }
 
 .form__campo::placeholder {
@@ -55,9 +56,26 @@
     width: 16px;
 }
 
+.ingresso-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingresso-data .form__campo {
+    width: 23vw;
+}
+
 @media screen  and (max-width:1023px) and (min-width:649px) {
     .form {
         width: 80%;
+    }
+
+    .ingresso-data {
+        flex-direction: column;
+    }
+
+    .ingresso-data .form__campo {
+        width: auto;
     }
 }
 
@@ -68,5 +86,13 @@
 
     .form__botao {
         width: 30%;
+    }
+
+    .ingresso-data {
+        flex-direction: column;
+    }
+
+    .ingresso-data .form__campo {
+        width: 90%;
     }
 }

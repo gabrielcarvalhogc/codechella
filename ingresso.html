@@ -52,15 +52,22 @@
                 <input type="email" class="form__campo" id="email">
             </label>
 
-            <label for="" class="form__bloco">
-                <span class="form__descricao">Tipo de programa</span>
-                <input type="text" class="form__campo">
-            </label>
-
-            <label for="" class="form__bloco">
-                <span class="form__descricao">Data de nascimento:</span>
-                <input type="date" class="form__campo">
-            </label>
+            <div class="ingresso-data">
+                <label for="ingressoTipo" class="form__bloco">
+                    <span class="form__descricao">Tipo de ingresso:</span>
+                    <select name="tipo-de-ingresso" id="ingressoTipo" class="form__campo">
+                        <option value="">Pista premium</option>
+                        <option value="">Pista comum</option>
+                        <option value="">Cadeiras térreo</option>
+                        <option value="">Cadeiras superiores</option>
+                        <option value="">Rampas</option>
+                    </select>
+                </label>
+                <label for="" class="form__bloco">
+                    <span class="form__descricao">Data de nascimento:</span>
+                    <input type="date" class="form__campo">
+                </label>
+            </div>
 
             <button type="submit" class="form__botao">Avançar <img src="img/ingresso/local_activity.png" alt=""></button>
         </form>
