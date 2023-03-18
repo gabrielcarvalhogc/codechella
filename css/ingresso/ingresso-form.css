@@ -51,6 +51,12 @@
     width: 18%;
 }
 
+.form__botao:hover {
+    cursor: pointer;
+    background-color: #519EC5;
+    transition: .5s;
+}
+
 .form__botao img {
     height: 16px;
     width: 16px;

@@ -43,6 +43,11 @@
     text-decoration: none;
 }
 
+.introduction__button:hover {
+    background-color: #519EC5;
+    transition: .5s;
+}
+
 @media screen and (max-width: 768px) {
     .introduction__picture img {
         width: 98.9vw;
