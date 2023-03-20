@@ -67,6 +67,16 @@
     justify-content: space-between;
 }
 
+.input-data__mensagem {
+    background-color: var(--azul-claro);
+    color: rgba(255, 0, 0, 0.699);
+    font: 500 1em var(--textos);
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    width: 70%;
+}
+
 .ingresso-data .form__campo {
     width: 23vw;
 }

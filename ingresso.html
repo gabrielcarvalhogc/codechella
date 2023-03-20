@@ -44,7 +44,7 @@
 
             <label for="nome" class="form__bloco">
                 <span class="form__descricao" id="spanNome">Nome completo:</span>
-                <input type="text" class="form__campo" id="nome" required >
+                <input type="text" class="form__campo" id="nome">
             </label>
 
             <label for="email" class="form__bloco">
@@ -63,13 +63,14 @@
                         <option value="">Rampas</option>
                     </select>
                 </label>
-                <label for="" class="form__bloco">
+
+                <label for="inputData" class="form__bloco" id="labelData">
                     <span class="form__descricao">Data de nascimento:</span>
-                    <input type="date" class="form__campo">
+                    <input type="date" class="form__campo" id="inputData" required>
                 </label>
             </div>
 
-            <button type="submit" class="form__botao">Avançar <img src="img/ingresso/local_activity.png" alt=""></button>
+            <button type="submit" class="form__botao" id="submitButton">Avançar <img src="img/ingresso/local_activity.png" alt=""></button>
         </form>
     </main>
     <footer class="footer">
@@ -91,5 +92,6 @@
     </footer>
 
     <script src="js/form-nome.js"></script>
+    <script src="js/validacao-idade.js"></script>
 </body>
 </html>
