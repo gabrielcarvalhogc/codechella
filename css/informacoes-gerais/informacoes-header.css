@@ -62,7 +62,7 @@
     }
 
     .header__container {
-        background-image: url('../img/menu.svg');
+        background-image: url('../../img/menu.svg');
         background-repeat: no-repeat;
         content-visibility: hidden;
         height: 20px;
