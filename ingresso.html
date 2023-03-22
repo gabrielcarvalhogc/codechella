@@ -38,18 +38,18 @@
     <div class="ingresso__banner"></div>
 
     <main>
-        <form class="form" action="/" id="form">
+        <form class="form" action="ingresso-confimacao.html" id="form">
 
             <h2 class="form__titulo">Preencha o formulário a seguir:</h2>
 
             <label for="nome" class="form__bloco">
                 <span class="form__descricao" id="spanNome">Nome completo:</span>
-                <input type="text" class="form__campo" id="nome">
+                <input type="text" class="form__campo" id="nome" required>
             </label>
 
             <label for="email" class="form__bloco">
                 <span class="form__descricao">Email:</span>
-                <input type="email" class="form__campo" id="email">
+                <input type="email" class="form__campo" id="email" required>
             </label>
 
             <div class="ingresso-data">
@@ -74,9 +74,14 @@
                 </label>
             </div>
 
-            <button type="submit" class="form__botao" id="submitButton">Avançar <img src="img/ingresso/local_activity.png" alt=""></button>
+            <button type="submit" class="form__botao" id="submitButton">
+                Avançar
+                <img src="img/ingresso/local_activity.png" alt="">
+            </button>
+
         </form>
     </main>
+
     <footer class="footer">
         <div class="footer__redes">
             <img class="footer__redes-img" src="img/Logo1 2.png" alt="logo do Codechella">

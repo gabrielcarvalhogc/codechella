@@ -10,7 +10,7 @@ formulario.addEventListener('submit', (e) => {
         e.preventDefault();
     };
 
-    sessionStorage.setItem("ingresso", TipoDeIngresso.value);
     sessionStorage.setItem("Nome", nome.value);
-    e.preventDefault();
+    sessionStorage.setItem("ingresso", TipoDeIngresso.value);
+
 });
