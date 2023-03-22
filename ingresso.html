@@ -55,12 +55,16 @@
             <div class="ingresso-data">
                 <label for="ingressoTipo" class="form__bloco">
                     <span class="form__descricao">Tipo de ingresso:</span>
-                    <select name="tipo-de-ingresso" id="ingressoTipo" class="form__campo">
-                        <option value="">Pista premium</option>
-                        <option value="">Pista comum</option>
-                        <option value="">Cadeiras térreo</option>
-                        <option value="">Cadeiras superiores</option>
-                        <option value="">Rampas</option>
+                    <select name="tipo-de-ingresso" id="ingressoTipo" class="form__campo" required>
+                        
+                        <option value="" selected disabled hidden>Tipo de ingresso</option>
+
+                        <option value="Pista premium">Pista premium</option>
+                        <option value="Pista comum">Pista comum</option>
+                        <option value="Cadeiras térreo">Cadeiras térreo</option>
+                        <option value="Cadeiras superiores">Cadeiras superiores</option>
+                        <option value="Rampas">Rampas</option>
+
                     </select>
                 </label>
 
@@ -91,7 +95,7 @@
         </div>
     </footer>
 
-    <script src="js/form-nome.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/validacao-idade.js"></script>
 </body>
 </html>
