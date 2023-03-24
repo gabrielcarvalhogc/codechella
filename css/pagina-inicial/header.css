@@ -1,18 +1,23 @@
 .header {
     background-color: var(--azul-escuro);
-    display: flex;
-    justify-content: space-between;
-    padding: 2em 5em;
+    padding: 2em 3em;
 }
 
 .header__container {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.header__container__lista {
+    display: flex;
+    list-style: none;
+    gap: 40px;
 }
 
 .header__container__link {
-    margin: 0 .8em;
+    color: var(--branco);
+    font: 700 20px var(--textos);
     text-decoration: none;
 }
 
@@ -20,69 +25,59 @@
     opacity: 70%;
 }
 
-.header__container__link p {
-    color: white;
-    font: 700 20px var(--textos);
-}
-
 @media screen and (max-width: 1023px) and (min-width: 650px) {
     .header {
-        display: block;
-        padding: 2em .5em;
-    }
-    .header__logo {
-        display: block;
-        margin: 0 auto 1em auto;
-        width: 30%;
+        padding: 1.5em 0;
     }
 
-    .header__container__link {
-        margin: 0 .6em;
+    .header__logo {
+        padding-bottom: 10px;
+    }
+
+    .header__container {
+        flex-direction: column;
+    }
+
+    .header__container__lista {
+        margin: 0 3%;
     }
 }
 
 @media screen and (max-width: 649px) {
 
     .header {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        padding: 7% 0;
+        padding: 1em 3em;
     }
 
     .header__logo {
         margin: 0;
-        padding-left: 5%;
-        width: 50vw;
+        width: 35vw;
+        align-items: center;
     }
 
-    .header__container {
-        background-image: url('../../img/menu.svg');
-        background-repeat: no-repeat;
-        content-visibility: hidden;
-        height: 20px;
-        padding-right: 5%;
-        width: 10%;
+    .header__sidebar {
+        background: url('../../img/menu.svg') no-repeat center;
+        width: 24px;
+        height: 24px;
     }
 
-    .header__container:hover {
-        background-image: none;
-        content-visibility: visible;
-        display: flex;
+    .header__container__lista {
         flex-direction: column;
-        gap: 8px;
-        height: auto;
-        justify-content: right;
-        padding: 16px 0;
-        width: 50%;
+        gap: 0;
+        text-align: center;
+        line-height: 40px;
+        position: fixed;
+        right: -20rem;
     }
 
-    .header__container__link p {
-        font-size: 16px;
+    .active {
+        right: 0;
+        position: relative;
+        transition: 1s;
     }
 
-    .header__container__link-border {
+    .header__container__link {
         border-bottom: 1px solid var(--branco);
-        padding: 10px;
+        padding: 8px;
     }
 }
