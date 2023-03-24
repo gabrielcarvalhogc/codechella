@@ -10,57 +10,131 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/introduction.css">
-    <link rel="stylesheet" href="css/line-up.css">
+    <link rel="stylesheet" href="css/pagina-inicial/header.css">
+    <link rel="stylesheet" href="css/pagina-inicial/banner-boas-vindas.css">
+    <link rel="stylesheet" href="css/pagina-inicial/introduction.css">
+    <link rel="stylesheet" href="css/pagina-inicial/line-up.css">
+    <link rel="stylesheet" href="css/pagina-inicial/banner-festa.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="img/Logo1 1.svg" alt="Logo do Codechella">
+        <a href="index.html"><img class="header__logo" src="img/Logo1 1.svg" alt="Logo do Codechella"></a>
 
         <div class="header__container">
-            <a class="header__container__link" href="#"><p>A experiência</p></a>
-            <a class="header__container__link" href="#"><p>Mapa de setores</p></a>
-            <a class="header__container__link" href="#"><p>Informações</p></a>
-            <a class="header__container__link" href="#"><p>Ingresso</p></a>
+            <a class="header__container__link header__container__link-border" href="experiencia.html">
+                <p>A experiência</p>
+            </a>
+
+            <a class="header__container__link header__container__link-border" href="setores.html">
+                <p>Mapa de setores</p>
+            </a>
+
+            <a class="header__container__link header__container__link-border" href="tela-informacoes.html">
+                <p>Informações</p>
+            </a>
+            
+            <a class="header__container__link" href="ingresso.html">
+                <p>Ingresso</p>
+            </a>
         </div>
     </header>
 
     <main class="main">
+
+        <div class="introduction__banner"></div>
         
-        <img class="introduction__banner" src="img/Banner-boas-vindas.png" alt="">
         <section class="introduction">
             
-            <img class="introduction__festa" src="img/festa.png" alt="Pessoas olhando para o palco de um show">
+            <img class="introduction__festa" src="img/pagina-inicial/festa.png" alt="Pessoas olhando para o palco de um show">
 
             <div class="introduction__container">
-                <h2 class="introduction__tittle"> &lt; 11 e 12 de Março &gt; Aluródromo de São Paulo</h2>
+                <h2 class="introduction__tittle"> &lt; 11 e 12 de Março &gt; <br> Aluródromo de São Paulo</h2>
 
                 <p class="introduction__description">Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
 
-                <a class="introduction__button" href="#">Comprar ingresso!</a>
+                <a class="introduction__button" href="ingresso.html">
+                    <p>Comprar ingresso!</p>
+
+                </a>
             </div>
         </section>
-<!--
+
         <section class="line-up">
             <h2 class="line-up__tittle">/line-up/</h2>
+
             <h3 class="line-up__days">Sábado &lt;11/03&gt;</h3>
 
-            <p class="line-up__saturday">System of a DOM</p>
-            <p class="line-up__saturday">Python Maiden </p>
-            <p class="line-up__saturday">Apollo Client 2001</p>
-            <p class="line-up__saturday">Bon Java</p>
-            <p class="line-up__saturday">NickCallback</p>
-            <p class="line-up__saturday">Linkin Promises</p>
-            <p class="line-up__saturday">Fullstack Fighters</p>
-            <p class="line-up__saturday">Papa React</p>
-            <p class="line-up__saturday">Angular in Chains</p>
-            <p class="line-up__saturday">Agnostic Front-end</p>
-            <p class="line-up__saturday">SlipkNode</p>
-            <p class="line-up__saturday">Pink Flutter</p>
-            <p class="line-up__saturday">Kiss</p>
+            <p class="line-up__saturday line-up__saturday-main">System of a DOM</p>
 
+            <div class="line-up__line2">
+                <p class="line-up__saturday line-up__saturday-line2">Python Maiden </p>
+                <p class="line-up__saturday line-up__saturday-line2">Apollo Client 2001</p>
+                <p class="line-up__saturday line-up__saturday-line2">Bon Java</p>
+                <p class="line-up__saturday line-up__saturday-line2">NickCallback</p>
+            </div>
+
+            <div class="line-up__line3">
+                <p class="line-up__saturday line-up__saturday-line3">Linkin Promises</p>
+                <p class="line-up__saturday line-up__saturday-line3">Fullstack Fighters</p>
+                <p class="line-up__saturday line-up__saturday-line3">Papa React</p>
+                <p class="line-up__saturday line-up__saturday-line3">Angular in Chains</p>
+            </div>
+
+            <div class="line-up__line4">
+                <p class="line-up__saturday line-up__saturday-line4">Agnostic Front-end</p>
+                <p class="line-up__saturday line-up__saturday-line4">SlipkNode</p>
+                <p class="line-up__saturday line-up__saturday-line4">Pink Flutter</p>
+                <p class="line-up__saturday line-up__saturday-line4">Kiss</p>
+            </div>
+
+            <h3 class="line-up__days">Domingo &lt;12/03&gt;</h3>
+
+            <p class="line-up__saturday line-up__saturday-main">Lana Del Ploy</p>
+
+            <div class="line-up__line2">
+                <p class="line-up__saturday line-up__saturday-line2">Dua Lib </p>
+                <p class="line-up__saturday line-up__saturday-line2">The Backnd</p>
+                <p class="line-up__saturday line-up__saturday-line2">CSS Styles</p>
+                <p class="line-up__saturday line-up__saturday-line2">DJ Query</p>
+                <p class="line-up__saturday line-up__saturday-line2">ArrayAna Grande</p>
+            </div>
+
+            <div class="line-up__line3">
+                <p class="line-up__saturday line-up__saturday-line3">Miley Cypress</p>
+                <p class="line-up__saturday line-up__saturday-line3">The Bootstrap Boys</p>
+                <p class="line-up__saturday line-up__saturday-line3">Json Derulo</p>
+                <p class="line-up__saturday line-up__saturday-line3">CloudPlay</p>
+                <p class="line-up__saturday line-up__saturday-line3">Dev Lovato</p>
+            </div>
+
+            <div class="line-up__line4">
+                <p class="line-up__saturday line-up__saturday-line4">Kylie MiLOG</p>
+                <p class="line-up__saturday line-up__saturday-line4">Jenkins Brothers</p>
+                <p class="line-up__saturday line-up__saturday-line4">Rubycat Dolls</p>
+            </div>
+        
         </section>
-    </main>-->
+    </main>
+
+    <div class="line-up__img"></div>
+
+    <footer class="footer">
+        <div class="footer__redes">
+            <img class="footer__redes-img" src="img/Logo1 2.png" alt="logo do Codechella">
+            <p class="footer__redes__social">
+                Acesse nossas redes:
+                <img src="img/icone-instagran.png" alt="">
+                <img src="img/icone-twich.png" alt="">
+                <img src="img/icone-twitter.png" alt="">
+                <img src="img/icone-whatsapp.png" alt="">
+            </p>
+        </div>
+
+        <div class="footer__dev">
+            <p class="footer__devs">Desenvolvido por Gabriel Carvalho e Alura</p>
+            <p class="footer__devs">Projeto fictício sem fins comerciais</p>
+        </div>
+    </footer>
 </body>
 </html>

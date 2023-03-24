@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresso</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ingresso/ingresso-header.css">
+    <link rel="stylesheet" href="css/ingresso/ingresso-banner.css">
+    <link rel="stylesheet" href="css/ingresso/ingresso-form.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="img/Logo1 1.svg" alt="Logo do Codechella"></a>
+
+        <div class="header__container">
+            <a class="header__container__link header__container__link-border" href="experiencia.html">
+                <p>A experiência</p>
+            </a>
+
+            <a class="header__container__link header__container__link-border" href="setores.html">
+                <p>Mapa de setores</p>
+            </a>
+
+            <a class="header__container__link header__container__link-border" href="tela-informacoes.html">
+                <p>Informações</p>
+            </a>
+
+            <a class="header__container__link ingresso__link" href="ingresso.html">
+                <p>Ingresso</p>
+            </a>
+        </div>
+    </header>
+
+    <div class="ingresso__banner"></div>
+
+    <main>
+        <form class="form" action="ingresso-confimacao.html" id="form">
+
+            <h2 class="form__titulo">Preencha o formulário a seguir:</h2>
+
+            <label for="nome" class="form__bloco">
+                <span class="form__descricao" id="spanNome">Nome completo:</span>
+                <input type="text" class="form__campo" id="nome" required>
+            </label>
+
+            <label for="email" class="form__bloco">
+                <span class="form__descricao">Email:</span>
+                <input type="email" class="form__campo" id="email" required>
+            </label>
+
+            <div class="ingresso-data">
+                <label for="ingressoTipo" class="form__bloco">
+                    <span class="form__descricao">Tipo de ingresso:</span>
+                    <select name="tipo-de-ingresso" id="ingressoTipo" class="form__campo" required>
+                        
+                        <option value="" selected disabled hidden>Tipo de ingresso</option>
+
+                        <option value="Pista premium">Pista premium</option>
+                        <option value="Pista comum">Pista comum</option>
+                        <option value="Cadeiras térreo">Cadeiras térreo</option>
+                        <option value="Cadeiras superiores">Cadeiras superiores</option>
+                        <option value="Rampas">Rampas</option>
+
+                    </select>
+                </label>
+
+                <label for="inputData" class="form__bloco" id="labelData">
+                    <span class="form__descricao">Data de nascimento:</span>
+                    <input type="date" class="form__campo" id="inputData" required>
+                </label>
+            </div>
+
+            <button type="submit" class="form__botao" id="submitButton">
+                Avançar
+                <img src="img/ingresso/local_activity.png" alt="">
+            </button>
+
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__redes">
+            <img class="footer__redes-img" src="img/Logo1 2.png" alt="logo do Codechella">
+            <p class="footer__redes__social">
+                Acesse nossas redes:
+                <img src="img/icone-instagran.png" alt="">
+                <img src="img/icone-twich.png" alt="">
+                <img src="img/icone-twitter.png" alt="">
+                <img src="img/icone-whatsapp.png" alt="">
+            </p>
+        </div>
+
+        <div class="footer__dev">
+            <p class="footer__devs">Desenvolvido por Gabriel Carvalho e Alura</p>
+            <p class="footer__devs">Projeto fictício sem fins comerciais</p>
+        </div>
+    </footer>
+
+    <script src="js/form.js"></script>
+    <script src="js/validacao-idade.js"></script>
+</body>
+</html>

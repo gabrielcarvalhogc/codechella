@@ -1,5 +1,5 @@
 :root {
-    --gradient-verao: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    --gradient-verao:180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%;
     --azul-claro: #C8DEEF;
     --coral: #FBF0DD;
     --amarelo: #FACF9D;
@@ -20,8 +20,4 @@
 
 main {
     background-image: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
-}
-
-.introduction__banner {
-    width: 100%;
 }

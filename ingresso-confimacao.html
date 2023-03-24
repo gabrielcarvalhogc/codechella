@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresso</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ingresso/ingresso-header.css">
+    <link rel="stylesheet" href="css/ingresso/ingresso-confirmacao-banner.css">
+    <link rel="stylesheet" href="css/ingresso/qr-code.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="img/Logo1 1.svg" alt="Logo do Codechella"></a>
+
+        <div class="header__container">
+            <a class="header__container__link header__container__link-border" href="experiencia.html">
+                <p>A experiência</p>
+            </a>
+
+            <a class="header__container__link header__container__link-border" href="setores.html">
+                <p>Mapa de setores</p>
+            </a>
+
+            <a class="header__container__link header__container__link-border" href="tela-informacoes.html">
+                <p>Informações</p>
+            </a>
+            
+            <a class="header__container__link ingresso__link" href="ingresso.html">
+                <p>Ingresso</p>
+            </a>
+        </div>
+    </header>
+
+    <div class="ingresso-confirmacao__banner"></div>
+
+    <main>
+        <section class="confirmacao">
+            <h2 class="confirmacao__titulo">Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</h2>
+
+            <div class="confirmacao__container">
+
+                <div class="confirmacao__imagens">
+                    <img src="img/ingresso/Logo.png" alt="logo do Codechella">
+    
+                    <img src="img/ingresso/Ellipse.png" alt="">
+                </div>
+
+                <div class="confirmacao__bloco">
+                    <picture>
+                        <source media="(max-width: 425px)" srcset="img/ingresso/Qr-code-mobile.svg" sizes="">
+                        <source media="(max-width: 1023px)" srcset="img/ingresso/Qr-code-tablet.svg" sizes="">
+                        <source media="(min-width: 1024px)" srcset="img/ingresso/Qr-code-desktop.svg" sizes="">
+                        <img class="confirmacao__qr-code" src="img/ingresso/Qr-code-desktop.svg" alt="">
+                    </picture>
+
+                    <div class="confirmacao__informacoes" id="ingressoInformacoes">
+
+                        <h3 class="confirmacao__nome" id="nomeIngresso"></h3>
+
+                        <p class="confirmacao__dados" id="tipoDoIngresso"></p>
+                        <p class="confirmacao__dados">Setor Pista</p>
+                        <p class="confirmacao__dados">Data: 11/03</p>
+                        <p class="confirmacao__dados">Local: São Paulo-SP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__redes">
+            <img class="footer__redes-img" src="img/Logo1 2.png" alt="logo do Codechella">
+            <p class="footer__redes__social">
+                Acesse nossas redes:
+                <img src="img/icone-instagran.png" alt="">
+                <img src="img/icone-twich.png" alt="">
+                <img src="img/icone-twitter.png" alt="">
+                <img src="img/icone-whatsapp.png" alt="">
+            </p>
+        </div>
+
+        <div class="footer__dev">
+            <p class="footer__devs">Desenvolvido por Gabriel Carvalho e Alura</p>
+            <p class="footer__devs">Projeto fictício sem fins comerciais</p>
+        </div>
+    </footer>
+
+    <script src="js/confirmacaoIngresso.js"></script>
+</body>
+</html>
